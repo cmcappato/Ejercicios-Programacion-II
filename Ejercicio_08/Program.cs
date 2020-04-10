@@ -10,6 +10,7 @@ namespace Ejercicio_08
     {
         static void Main(string[] args)
         {
+            Console.Title = "Ejercicio Nro 08";
         }
     }
 }

@@ -12,10 +12,10 @@ namespace Ejercicio_16
 
         private byte nota1 = 0;
         private byte nota2 = 0;
-        private byte notaFinal = 0;
+        private float notaFinal = 0;
         public string apellido;
-        public int legajo;
         public string nombre;
+        public int legajo;
 
         #endregion
 
@@ -29,23 +29,23 @@ namespace Ejercicio_16
             }
             else
             {
-
+                notaFinal = -1;
             }
         }
 
         public void Estudiar(byte notaUno, byte notaDos)
         {
             Console.Write("Ingrese la primera nota");
-            notaUno = byte.Parse(Console.ReadLine());
+            nota1 = byte.Parse(Console.ReadLine());
             Console.Write("Ingrese la segunda nota");
-            notaDos = byte.Parse(Console.ReadLine());
+            nota2 = byte.Parse(Console.ReadLine());
         }
 
         public string Mostrar()
         {
             if (notaFinal == -1)
             {
-                Console.WriteLine("Alumno desaprobado");
+                return "Alumno desaprobado";
             }
             return "";
         }
