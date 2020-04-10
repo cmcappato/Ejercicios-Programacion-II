@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_3
+namespace Ejercicio_03
 {
     class Program
     {
@@ -43,7 +43,6 @@ namespace Ejercicio_3
                 }
                 if (contador == 2)
                 {
-
                     Console.Write(i + " ");
                 }
                 contador = 0;

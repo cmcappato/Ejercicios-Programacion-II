@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_2
+namespace Ejercicio_02
 {
     class Program
     {
@@ -19,7 +19,7 @@ namespace Ejercicio_2
             Console.Write("Ingrese un numero: ");
             numero = int.Parse(Console.ReadLine());
 
-            if (numero < 0)
+            while (numero < 0)
             {
                 Console.Write("Error. Reingresar numero: ");
                 numero = int.Parse(Console.ReadLine());

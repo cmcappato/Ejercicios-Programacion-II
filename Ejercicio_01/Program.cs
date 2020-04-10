@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_1
+namespace Ejercicio_01
 {
     class Program
     {
@@ -45,7 +45,6 @@ namespace Ejercicio_1
             Console.WriteLine("Número mínimo: {0}", minimo);
             Console.WriteLine("Numero maximo: {0}", maximo);
             Console.WriteLine("Promedio: {0}", promedio);
-
             Console.ReadKey();
         }
     }
