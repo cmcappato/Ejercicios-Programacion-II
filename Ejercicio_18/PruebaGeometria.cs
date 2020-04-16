@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_20
+namespace Ejercicio_18
 {
-    class Program
+    public class PruebaGeometria
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
