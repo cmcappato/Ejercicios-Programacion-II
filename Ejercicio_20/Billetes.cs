@@ -118,7 +118,7 @@ namespace Billetes
         public static Dolar operator +(Dolar d, Pesos p)
         {
             return d + p;
-        } 
+        }
 
         #endregion
     }
@@ -332,7 +332,6 @@ namespace Billetes
         }
 
         #endregion
-
 
         #region Sobrecarga de operadores de asignación
 
