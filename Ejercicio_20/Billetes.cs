@@ -19,17 +19,17 @@ namespace Billetes
 
         private Dolar()
         {
-
+            cotizRespectoDolar = 1;
         }
 
         public Dolar(double cantidad)
         {
-
+            this.cantidad = cantidad;
         }
 
         public Dolar(double cantidad, double cotizacion) : this(cantidad)
         {
-
+            cotizRespectoDolar = cotizacion;
         }
 
         #endregion
@@ -38,12 +38,12 @@ namespace Billetes
 
         public double GetCantidad()
         {
-            return 0;
+            return cantidad;
         }
 
         public static double GetCotizacion()
         {
-            return 0;
+            return cotizRespectoDolar;
         }
 
         #endregion
@@ -52,51 +52,57 @@ namespace Billetes
 
         public static explicit operator Euro(Dolar d)
         {
-            return d;
+            Euro euro = new Euro(d.cantidad * Euro.GetCotizacion());
+
+            return euro;
         }
 
         public static explicit operator Pesos(Dolar d)
         {
-            return d;
+            Pesos pesos = new Pesos(d.cantidad * Pesos.GetCotizacion());
+
+            return pesos;
         }
 
         public static implicit operator Dolar(double d)
         {
-            return d;
+            Dolar dolar = new Dolar(d);
+
+            return dolar;
         }
 
         #endregion
 
         #region Sobrecargas de operadores de comparación
 
-        public static bool operator !=(Dolar d, Euro e)
-        {
-            return true;
-        }
-
-        public static bool operator !=(Dolar d, Pesos p)
-        {
-            return true;
-        }
-
-        public static bool operator !=(Dolar d1, Dolar d2)
-        {
-            return true;
-        }
-
         public static bool operator ==(Dolar d, Euro e)
         {
-            return true;
+            return (d.GetCantidad() == e.GetCantidad());
+        }
+
+        public static bool operator !=(Dolar d, Euro e)
+        {
+            return !(d == e);
         }
 
         public static bool operator ==(Dolar d, Pesos p)
         {
-            return true;
+            return (d.GetCantidad() == p.GetCantidad());
+        }
+
+        public static bool operator !=(Dolar d, Pesos p)
+        {
+            return !(d == p);
         }
 
         public static bool operator ==(Dolar d1, Dolar d2)
         {
-            return true;
+            return (d1.GetCantidad() == d2.GetCantidad());
+        }
+
+        public static bool operator !=(Dolar d1, Dolar d2)
+        {
+            return !(d1 == d2);
         }
 
         #endregion
@@ -105,19 +111,41 @@ namespace Billetes
 
         public static Dolar operator -(Dolar d, Euro e)
         {
-            return d - e;
+            Dolar dolar = new Dolar(d.cantidad - ((Dolar)e).cantidad);
+
+            return dolar;
         }
         public static Dolar operator -(Dolar d, Pesos p)
         {
-            return d - p;
+            Dolar dolar = new Dolar(d.cantidad - ((Dolar)p).cantidad);
+
+            return dolar;
         }
         public static Dolar operator +(Dolar d, Euro e)
         {
-            return d + e;
+            Dolar dolar = new Dolar(d.cantidad + ((Dolar)e).cantidad);
+
+            return dolar;
         }
         public static Dolar operator +(Dolar d, Pesos p)
         {
-            return d + p;
+            Dolar dolar = new Dolar(d.cantidad + ((Dolar)p).cantidad);
+
+            return dolar;
+        }
+
+        #endregion
+
+        #region Invalidaciones
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #endregion
@@ -135,17 +163,17 @@ namespace Billetes
 
         private Euro()
         {
-
+            cotizRespectoDolar = 1.16;
         }
 
         public Euro(double cantidad)
         {
-
+            this.cantidad = cantidad;
         }
 
         public Euro(double cantidad, double cotizacion) : this(cantidad)
         {
-
+            cotizRespectoDolar = cotizacion;
         }
 
         #endregion
@@ -154,12 +182,12 @@ namespace Billetes
 
         public double GetCantidad()
         {
-            return 0;
+            return cantidad;
         }
 
         public static double GetCotizacion()
         {
-            return 0;
+            return cotizRespectoDolar;
         }
 
         #endregion
@@ -168,51 +196,57 @@ namespace Billetes
 
         public static explicit operator Dolar(Euro e)
         {
-            return e;
+            Dolar dolar = new Dolar(e.cantidad * Euro.GetCotizacion());
+
+            return dolar;
         }
 
         public static explicit operator Pesos(Euro e)
         {
-            return e;
+            Pesos pesos = new Pesos(e.cantidad * Euro.GetCotizacion());
+
+            return pesos;
         }
 
         public static implicit operator Euro(double d)
         {
-            return d;
+            Euro euro = new Euro(d);
+
+            return euro;
         }
 
         #endregion
 
         #region Sobrecargas de operadores de comparación
 
-        public static bool operator !=(Euro e, Dolar d)
-        {
-            return true;
-        }
-
-        public static bool operator !=(Euro e, Pesos p)
-        {
-            return true;
-        }
-
-        public static bool operator !=(Euro e1, Euro e2)
-        {
-            return true;
-        }
-
         public static bool operator ==(Euro e, Dolar d)
         {
-            return true;
+            return (e.GetCantidad() == d.GetCantidad());
+        }
+
+        public static bool operator !=(Euro e, Dolar d)
+        {
+            return !(e == d); 
         }
 
         public static bool operator ==(Euro e, Pesos p)
         {
-            return true;
+            return (e.GetCantidad() == p.GetCantidad());
         }
 
+        public static bool operator !=(Euro e, Pesos p)
+        {
+            return !(e == p);
+        }
+        
         public static bool operator ==(Euro e1, Euro e2)
         {
-            return true;
+            return (e1.GetCantidad() == e2.GetCantidad());
+        }
+
+        public static bool operator !=(Euro e1, Euro e2)
+        {
+            return !(e1 == e2);
         }
 
         #endregion
@@ -221,19 +255,44 @@ namespace Billetes
 
         public static Euro operator -(Euro e, Dolar d)
         {
-            return e - d;
+            Euro euro = new Euro(e.cantidad - ((Euro)d).cantidad);
+
+            return euro;
         }
-        public static Euro operator -(Euro e, Pesos p)
-        {
-            return e - p;
-        }
-        public static Euro operator +(Euro e, Dolar d)
-        {
-            return e + d;
-        }
+
         public static Euro operator +(Euro e, Pesos p)
         {
-            return e + p;
+            Euro euro = new Euro(e.cantidad + ((Euro)p).cantidad);
+
+            return euro;
+        }
+
+        public static Euro operator -(Euro e, Pesos p)
+        {
+            Euro euro = new Euro(e.cantidad - ((Euro)p).cantidad);
+
+            return euro;
+        }
+
+        public static Euro operator +(Euro e, Dolar d)
+        {
+            Euro euro = new Euro(e.cantidad + ((Euro)d).cantidad);
+
+            return euro;
+        }
+
+        #endregion
+
+        #region Invalidaciones
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #endregion
@@ -251,17 +310,17 @@ namespace Billetes
 
         private Pesos()
         {
-
+            cotizRespectoDolar = 38.33;
         }
 
         public Pesos(double cantidad)
         {
-
+            this.cantidad = cantidad;
         }
 
         public Pesos(double cantidad, double cotizacion) : this(cantidad)
         {
-
+            cotizRespectoDolar = cotizacion;
         }
 
         #endregion
@@ -270,65 +329,71 @@ namespace Billetes
 
         public double GetCantidad()
         {
-            return 0;
+            return cantidad;
         }
 
         public static double GetCotizacion()
         {
-            return 0;
+            return cotizRespectoDolar;
         }
-
+        
         #endregion
 
         #region Sobrecargas implícitas y explícitas
 
         public static explicit operator Dolar(Pesos p)
         {
-            return p;
+            Dolar dolar = new Dolar(p.cantidad * Pesos.GetCotizacion());
+
+            return dolar;
         }
 
         public static explicit operator Euro(Pesos p)
         {
-            return p;
+            Euro euro = new Euro(p.cantidad * Pesos.GetCotizacion());
+
+            return euro;
         }
 
         public static implicit operator Pesos(double d)
         {
-            return d;
+            Pesos peso = new Pesos(d);
+            
+            return peso;
         }
 
         #endregion
 
         #region Sobrecargas de operadores de comparación
 
-        public static bool operator !=(Pesos p, Dolar d)
-        {
-            return true;
-        }
-
-        public static bool operator !=(Pesos p, Euro e)
-        {
-            return true;
-        }
-
-        public static bool operator !=(Pesos p1, Pesos p2)
-        {
-            return true;
-        }
-
         public static bool operator ==(Pesos p, Dolar d)
         {
-            return true;
+            return (p.GetCantidad() == d.GetCantidad());
+        }
+
+        public static bool operator !=(Pesos p, Dolar d)
+        {
+            return !(p == d);
         }
 
         public static bool operator ==(Pesos p, Euro e)
         {
-            return true;
+            return (p.GetCantidad() == e.GetCantidad());
+        }
+
+        public static bool operator !=(Pesos p, Euro e)
+        {
+            return !(p == e);
         }
 
         public static bool operator ==(Pesos p1, Pesos p2)
         {
-            return true;
+            return (p1.GetCantidad() == p2.GetCantidad());
+        }
+
+        public static bool operator !=(Pesos p1, Pesos p2)
+        {
+            return !(p1 == p2);
         }
 
         #endregion
@@ -337,19 +402,44 @@ namespace Billetes
 
         public static Pesos operator -(Pesos p, Dolar d)
         {
-            return p - d;
+            Pesos pesos = new Pesos(p.cantidad - ((Pesos)d).cantidad);
+
+            return pesos;
         }
-        public static Pesos operator -(Pesos p, Euro e)
-        {
-            return p - e;
-        }
+
         public static Pesos operator +(Pesos p, Dolar d)
         {
-            return p + d;
+            Pesos pesos = new Pesos(p.cantidad + ((Pesos)d).cantidad);
+
+            return pesos;
         }
+
+        public static Pesos operator -(Pesos p, Euro e)
+        {
+            Pesos pesos = new Pesos(p.cantidad - ((Pesos)e).cantidad);
+
+            return pesos;
+        }
+
         public static Pesos operator +(Pesos p, Euro e)
         {
-            return p + e;
+            Pesos pesos = new Pesos(p.cantidad + ((Pesos)e).cantidad);
+
+            return pesos;
+        }
+
+        #endregion
+        
+        #region Invalidaciones
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         #endregion

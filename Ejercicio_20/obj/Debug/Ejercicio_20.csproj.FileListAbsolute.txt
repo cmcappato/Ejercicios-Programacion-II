@@ -1,0 +1,6 @@
+C:\Ejercicios-Programacion-II\Ejercicio_20\bin\Debug\Ejercicio_20.exe.config
+C:\Ejercicios-Programacion-II\Ejercicio_20\bin\Debug\Ejercicio_20.exe
+C:\Ejercicios-Programacion-II\Ejercicio_20\bin\Debug\Ejercicio_20.pdb
+C:\Ejercicios-Programacion-II\Ejercicio_20\obj\Debug\Ejercicio_20.csproj.CoreCompileInputs.cache
+C:\Ejercicios-Programacion-II\Ejercicio_20\obj\Debug\Ejercicio_20.exe
+C:\Ejercicios-Programacion-II\Ejercicio_20\obj\Debug\Ejercicio_20.pdb
