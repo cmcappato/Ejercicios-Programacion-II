@@ -1,0 +1,7 @@
+C:\Ejercicios-Programacion-II\Ejercicio_33\bin\Debug\Ejercicio_33.exe.config
+C:\Ejercicios-Programacion-II\Ejercicio_33\bin\Debug\Ejercicio_33.exe
+C:\Ejercicios-Programacion-II\Ejercicio_33\bin\Debug\Ejercicio_33.pdb
+C:\Ejercicios-Programacion-II\Ejercicio_33\obj\Debug\Ejercicio_33.csprojAssemblyReference.cache
+C:\Ejercicios-Programacion-II\Ejercicio_33\obj\Debug\Ejercicio_33.csproj.CoreCompileInputs.cache
+C:\Ejercicios-Programacion-II\Ejercicio_33\obj\Debug\Ejercicio_33.exe
+C:\Ejercicios-Programacion-II\Ejercicio_33\obj\Debug\Ejercicio_33.pdb
