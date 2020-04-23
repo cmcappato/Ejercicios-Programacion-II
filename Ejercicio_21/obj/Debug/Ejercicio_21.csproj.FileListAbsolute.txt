@@ -1,0 +1,6 @@
+C:\Ejercicios-Programacion-II\Ejercicio_21\bin\Debug\Ejercicio_21.exe.config
+C:\Ejercicios-Programacion-II\Ejercicio_21\bin\Debug\Ejercicio_21.exe
+C:\Ejercicios-Programacion-II\Ejercicio_21\bin\Debug\Ejercicio_21.pdb
+C:\Ejercicios-Programacion-II\Ejercicio_21\obj\Debug\Ejercicio_21.csproj.CoreCompileInputs.cache
+C:\Ejercicios-Programacion-II\Ejercicio_21\obj\Debug\Ejercicio_21.exe
+C:\Ejercicios-Programacion-II\Ejercicio_21\obj\Debug\Ejercicio_21.pdb
