@@ -167,7 +167,6 @@
             this.txtCotizacionEuro.Name = "txtCotizacionEuro";
             this.txtCotizacionEuro.Size = new System.Drawing.Size(129, 24);
             this.txtCotizacionEuro.TabIndex = 25;
-            this.txtCotizacionEuro.Leave += new System.EventHandler(this.btnConvertEuro_Click);
             // 
             // txtEuroAEuro
             // 
@@ -230,7 +229,6 @@
             this.txtCotizacionDolar.Name = "txtCotizacionDolar";
             this.txtCotizacionDolar.Size = new System.Drawing.Size(129, 24);
             this.txtCotizacionDolar.TabIndex = 32;
-            this.txtCotizacionDolar.Leave += new System.EventHandler(this.btnConvertDolar_Click);
             // 
             // txtDolarAEuro
             // 

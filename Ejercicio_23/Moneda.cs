@@ -34,7 +34,7 @@ namespace Ejercicio_23
 
         #endregion
 
-        #region Getters
+        #region Getters y Setters
 
         public double GetCantidad()
         {
@@ -42,6 +42,11 @@ namespace Ejercicio_23
         }
 
         public static double GetCotizacion()
+        {
+            return cotizRespectoDolar;
+        }
+
+        public static double SetCotizacion()
         {
             return cotizRespectoDolar;
         }
@@ -178,7 +183,7 @@ namespace Ejercicio_23
 
         #endregion
 
-        #region Getters
+        #region Getters y Setters
 
         public double GetCantidad()
         {
@@ -186,6 +191,11 @@ namespace Ejercicio_23
         }
 
         public static double GetCotizacion()
+        {
+            return cotizRespectoDolar;
+        }
+
+        public static double SetCotizacion()
         {
             return cotizRespectoDolar;
         }
@@ -325,7 +335,7 @@ namespace Ejercicio_23
 
         #endregion
 
-        #region Getters
+        #region Getters y Setters
 
         public double GetCantidad()
         {
@@ -333,6 +343,11 @@ namespace Ejercicio_23
         }
 
         public static double GetCotizacion()
+        {
+            return cotizRespectoDolar;
+        }
+
+        public static double SetCotizacion()
         {
             return cotizRespectoDolar;
         }
@@ -442,6 +457,6 @@ namespace Ejercicio_23
             return base.GetHashCode();
         }
 
-        #endregion
+        #endregion        
     }
 }

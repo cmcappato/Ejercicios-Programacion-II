@@ -15,14 +15,24 @@ namespace Ejercicio_23
         public FrmMonedas()
         {
             InitializeComponent();
-            imageList = new ImageList();
         }
 
         private void btnLockCotizacion_Click(object sender, EventArgs e)
-        {            
-            txtCotizacionDolar.Enabled = true;
-            txtCotizacionPeso.Enabled = true;
-            txtCotizacionEuro.Enabled = true;
+        {
+            if (btnLockCotizacion.ImageIndex == 0)
+            {
+                btnLockCotizacion.ImageIndex = 1;
+                txtCotizacionDolar.Enabled = false;
+                txtCotizacionPeso.Enabled = false;  
+                txtCotizacionEuro.Enabled = false;
+            }   
+            else if (btnLockCotizacion.ImageIndex == 1)
+            {
+                btnLockCotizacion.ImageIndex = 0;
+                txtCotizacionDolar.Enabled = true;
+                txtCotizacionPeso.Enabled = true;
+                txtCotizacionEuro.Enabled = true;
+            }
         }
 
         private void btnConvertEuro_Click(object sender, EventArgs e)
