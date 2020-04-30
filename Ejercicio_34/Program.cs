@@ -11,6 +11,5 @@ namespace Ejercicio_34
         static void Main(string[] args)
         {
         }
-
     }
 }

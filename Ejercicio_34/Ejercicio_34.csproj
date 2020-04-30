@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{647292F6-C7BE-4ABB-A60F-C03A6A3DBF57}</ProjectGuid>
+    <ProjectGuid>{6605A8E4-4B5D-4B04-9D4B-556238E746D4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Ejercicio_34</RootNamespace>
     <AssemblyName>Ejercicio_34</AssemblyName>
@@ -43,10 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Automovil.cs" />
-    <Compile Include="Camion.cs" />
-    <Compile Include="Colores.cs" />
-    <Compile Include="Moto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
