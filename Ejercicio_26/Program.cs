@@ -10,13 +10,16 @@ namespace Ejercicio_26
     {
         static void Main(string[] args)
         {
+            int[] numero = new int[20];            
             Random random = new Random();
+                      
 
+            do
+            {                
+                Console.WriteLine("Numero: " + random.Next());                
+              
+            } while(random.Next() != 0 && numero.Length < 20);
 
-            for (int i = 0; i < 20; i++)
-            {
-                Console.WriteLine("Numero: " + random.Next());
-            }
 
             Console.ReadKey();
         }
