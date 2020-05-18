@@ -1,0 +1,10 @@
+C:\Ejercicios-Programacion-II\Ejercicio_24\bin\Debug\Ejercicio_24.exe.config
+C:\Ejercicios-Programacion-II\Ejercicio_24\bin\Debug\Ejercicio_24.exe
+C:\Ejercicios-Programacion-II\Ejercicio_24\bin\Debug\Ejercicio_24.pdb
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.csprojAssemblyReference.cache
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.Form1.resources
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.Properties.Resources.resources
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.csproj.GenerateResource.cache
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.csproj.CoreCompileInputs.cache
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.exe
+C:\Ejercicios-Programacion-II\Ejercicio_24\obj\Debug\Ejercicio_24.pdb

@@ -20,18 +20,20 @@ namespace Ejercicio_19
             this.cantidadSumas = cantidadSumas;
         }
 
-        public long Sumar (long a, long b)
+        public long Sumar(long a, long b)
         {
+            cantidadSumas++;
+
             return a + b;
         }
 
         public string Sumar(string a, string b)
         {
-            return Sumar(a,b).ToString();
+            return (a + b).ToString();
         }
 
         public static explicit operator int(Sumador s)
-        {
+        {            
             return s.cantidadSumas;
         }
 
@@ -44,8 +46,5 @@ namespace Ejercicio_19
         {
             return (s1.cantidadSumas + s2.cantidadSumas);
         }
-
-
-
     }
 }
